@@ -1,0 +1,16 @@
+# Nested plugin repos (separate git repos for local development)
+cami-plugin/
+vibecoding-sprint/
+
+# Claude Code local settings
+.claude/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
