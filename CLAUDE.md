@@ -5,14 +5,17 @@ This is the **marketplace registry** for Lando Labs Claude Code plugins. It cont
 ## Structure
 
 ```
-claude-plugins/              ← This repo (marketplace)
-├── .claude-plugin/
-│   └── marketplace.json     ← Registry of all plugins
-├── cami-plugin/             ← Separate repo (gitignored)
-└── vibecoding-sprint/       ← Separate repo (gitignored)
+claude-plugins/                  ← Parent directory (not a git repo)
+├── marketplace/                 ← This repo (marketplace registry)
+│   ├── .claude-plugin/
+│   │   └── marketplace.json     ← Registry of all plugins
+│   └── CLAUDE.md
+├── cami-plugin/                 ← Separate git repo
+├── vibecoding-sprint/           ← Separate git repo
+└── research-plugin/             ← Separate git repo
 ```
 
-**Important**: Plugin subdirectories are separate git repos, gitignored by this marketplace repo. They just live here for convenient local development.
+**Important**: Plugin directories are sibling git repos to this marketplace. Each plugin is independent.
 
 ## Plugins in This Marketplace
 
@@ -20,6 +23,7 @@ claude-plugins/              ← This repo (marketplace)
 |--------|---------|
 | **cami** | Agent management - scout, architect, deploy |
 | **vibecoding-sprint** | Sprint planning with GitHub + semver |
+| **research-plugin** | Multi-source research synthesis |
 | **fullstack-guild** | MERN stack agents (external repo) |
 | **game-dev-guild** | Phaser 3 agents (external repo) |
 | **content-guild** | Writing/marketing agents (external repo) |
@@ -33,21 +37,12 @@ claude-plugins/              ← This repo (marketplace)
 
 **To add a new plugin**:
 1. Add entry to `marketplace.json`
-2. If developing locally, clone/create the plugin repo as a subdirectory
-3. Add the directory name to `.gitignore`
+2. Create the plugin repo as a sibling directory (not nested)
 
-**To test locally**:
+**To test a plugin locally**:
 ```bash
-claude --plugin-dir ./cami-plugin
+claude --plugin-dir ../cami-plugin
 ```
-
-## Agents
-
-### plugin-architect
-Located in `cami-plugin/agents/plugin-architect.md`. Use proactively when building plugins, creating plugin.json or marketplace.json, writing SKILL.md files, or structuring plugin directories.
-
-### agent-architect
-Located in `cami-plugin/agents/agent-architect.md`. Use proactively when creating or refining Claude Code agents, designing agent system prompts, or architecting multi-agent systems.
 
 ## References
 
