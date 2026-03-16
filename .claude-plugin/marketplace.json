@@ -21,15 +21,37 @@
       "tags": ["agents", "management", "deployment", "orchestration"]
     },
     {
-      "name": "vibecoding-sprint",
+      "name": "aigile-dev",
       "source": {
         "source": "github",
-        "repo": "lando-labs/vibecoding-sprint"
+        "repo": "lando-labs/aigile-dev"
       },
-      "description": "Sprint planning with GitHub integration and semantic versioning",
+      "description": "AI-native agile development with sprint planning, market research, and full-stack agents",
       "version": "1.0.0",
-      "category": "project-management",
-      "tags": ["sprints", "planning", "github", "semver"]
+      "category": "development",
+      "tags": ["agile", "sprints", "agents", "planning", "research"]
+    },
+    {
+      "name": "model-bridge",
+      "source": {
+        "source": "github",
+        "repo": "lando-labs/model-bridge"
+      },
+      "description": "Expert-in-the-middle prompting for AI media generation models (FLUX, SDXL, Imagen, LTX Video)",
+      "version": "1.0.0",
+      "category": "ai-tools",
+      "tags": ["image-generation", "video-generation", "prompts", "flux", "imagen"]
+    },
+    {
+      "name": "audit-kit",
+      "source": {
+        "source": "github",
+        "repo": "lando-labs/audit-kit"
+      },
+      "description": "Core auditor agents for codebase health - security, dependencies, standards, project structure",
+      "version": "1.0.0",
+      "category": "quality",
+      "tags": ["security", "audit", "dependencies", "standards", "code-quality"]
     }
   ]
 }
