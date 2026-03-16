@@ -27,7 +27,7 @@
         "repo": "lando-labs/aigile-dev"
       },
       "description": "AI-native agile development with sprint planning, market research, and full-stack agents",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "development",
       "tags": ["agile", "sprints", "agents", "planning", "research"]
     },
