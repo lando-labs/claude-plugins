@@ -2,7 +2,7 @@
   "name": "lando-labs-marketplace",
   "owner": {
     "name": "Lando Labs",
-    "email": "hello@lando-labs.com"
+    "email": "feedback@landolabs.co"
   },
   "metadata": {
     "description": "Official Lando Labs plugin marketplace for Claude Code",
@@ -16,7 +16,7 @@
         "repo": "lando-labs/cami-plugin"
       },
       "description": "Claude Agent Management Interface - Scout, create, and deploy agents",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "category": "agent-management",
       "tags": ["agents", "management", "deployment", "orchestration"]
     },
